@@ -1,82 +1,117 @@
-____________________________________________________________________________________
+# Sistema de Anotación de Video para Análisis de Actividades
 
+Este proyecto es parte del curso **Inteligencia Artificial 1** de la Maestría en Inteligencia Artificial Aplicada, Universidad ICESI, Cali Colombia.
 
-# Project Template
-This is the template for the Project I course at the IA Master, Universidad Icesi, Cali Colombia
+#### -- Estado del Proyecto: Activo
 
-This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
+**Líder del Equipo: [Juan Esteban Ruiz](https://github.com/[github handle])(@slackHandle)**  
 
-*Instructions: Edit this template filling in the titles, information, and links! Feel free to stray a bit to suit your project but try to provide the main information for reviews and feedback purposes.*
-## Remove this table after updating your project's information
-____________________________________________________________________________________
+## Miembros del Equipo
 
-# Project Name
-This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
+|Nombre     |  Email   | 
+|-----------|-----------------|
+|[Juan Esteban Ruiz](https://github.com/JRuiz1601| juan.ruizome@u.icesi.edu.co |
+|[Juan David Quintero](https://github.com/[github handle]| @juan.quintero |
+|[Tomas Quintero](https://github.com/[github handle]) | @tomas.quintero |
 
-#### -- Project Status: [Active, On-Hold, Completed]
+## Contacto
+* ¡Puedes contactar al líder del equipo o al instructor si tienes preguntas o estás interesado en contribuir!
 
-## Contributing Members
+## Introducción/Objetivo del Proyecto
+El propósito de este proyecto es desarrollar un sistema automatizado de clasificación de actividades humanas básicas utilizando análisis de coordenadas articulares extraídas mediante MediaPipe. El sistema identificará cinco actividades específicas: caminar hacia la cámara, caminar de regreso, girar, sentarse y ponerse de pie, con una precisión superior al 85% y capacidad de procesamiento en tiempo real. Este desarrollo contribuye al avance de sistemas de análisis de movimiento no invasivos aplicables en rehabilitación, deporte e investigación biomecánica.
 
-**Team Leader: [Full Name](https://github.com/[github handle])(@slackHandle)**
-**Instructor: [Full Name](https://github.com/[github handle])(@slackHandle)**
+### Metodologías Utilizadas
+* Análisis Exploratorio de Datos (EDA)
+* Aprendizaje Automático Supervisado
+* Visualización de Datos
+* Modelado Predictivo
+* Procesamiento de Video en Tiempo Real
+* Metodología CRISP-DM
+* Validación Cruzada
+* Feature Engineering
 
-#### Other Members:
+### Tecnologías
+* Python 3.9
+* MediaPipe (Google)
+* OpenCV
+* Scikit-learn
+* XGBoost
+* Pandas, NumPy
+* Matplotlib, Seaborn
+* Jupyter Notebooks
+* Git/GitHub
 
-|Name     |  Email   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+## Descripción del Proyecto
+Este sistema utiliza la biblioteca MediaPipe de Google para extraer coordenadas de 33 puntos clave articulares de videos en tiempo real. A partir de estas coordenadas (x,y,z,visibility), se entrenan modelos de clasificación supervisada (SVM, Random Forest, XGBoost) para identificar automáticamente las actividades realizadas.
 
-## Contact
-* Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
+**Fuentes de Datos**: Videos de personas realizando las 5 actividades específicas, capturados desde diferentes ángulos, condiciones de iluminación y velocidades. Dataset objetivo de 250+ videos con 20+ participantes diversos.
 
+**Análisis y Modelado**: Extracción de características temporales y espaciales, normalización para diferentes tipos de cuerpo y distancias de cámara, entrenamiento de múltiples algoritmos con optimización de hiperparámetros y validación cruzada.
 
-## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+**Desafíos Principales**:
+- Variabilidad en movimientos humanos entre diferentes usuarios
+- Diferentes velocidades de ejecución de actividades
+- Oclusiones parciales y missing data en detección de pose
+- Generalización a nuevos usuarios no vistos durante entrenamiento
+- Requisitos de tiempo real (<100ms por clasificación)
 
-### Partner
-This section should be added when there's a partner institution 
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
+## Comenzando
+Instrucciones para contribuidores:
 
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+1. Clona este repositorio ([ayuda aquí](https://help.github.com/articles/cloning-a-repository/)):
+```
+git clone https://github.com/[usuario]/sistema-anotacion-video-ia.git
+cd sistema-anotacion-video-ia
+```
 
-### Technologies
-* R 
-* Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
+2. Los datos sin procesar se mantienen en [`Entrega1/data/videos/`](./Entrega1/data/videos/) dentro de este repositorio.
+   *Los videos originales se almacenan localmente debido a su tamaño. Para obtener acceso, contacta al equipo.*
 
-## Project Description
-(Provide a more detailed overview of the project.  Talk a bit about your data sources and what questions and hypotheses you are exploring. What specific data analysis/visualization and modeling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+3. Los scripts de procesamiento/transformación de datos están en [`Entrega1/src/data/`](./Entrega1/src/data/)
 
-## Getting Started
-Instructions for contributors
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
+4. Los notebooks de análisis están en [`Entrega1/notebooks/`](./Entrega1/notebooks/)
 
-    *If using offline data mention that and how contributors may obtain the data )*
-    
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
+5. **Instalación y Setup**:
+```
+cd Entrega1/
+pip install -r requirements.txt
+```
 
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
+Para setup detallado, consulta las [instrucciones de instalación](./Entrega1/docs/setup_instructions.md)
 
-5. Follow setup [instructions](Link to file)
+## Entregas y Documentación Principal
 
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
+### 📂 Entrega 1 (Semana 12) - Fundamentos
+* [Documento de Fundamentos](./Entrega1/docs/entrega1_fundamentos.md) - Preguntas, metodología, métricas y EDA
+* [Setup MediaPipe](./Entrega1/notebooks/01_setup_mediapipe.ipynb) - Configuración inicial del pipeline
+* [EDA Inicial](./Entrega1/notebooks/02_eda_inicial.ipynb) - Análisis exploratorio de coordenadas
 
+### 📂 Entrega 2 (Semana 14) - Modelado
+* [Entrenamiento de Modelos](./Entrega2/notebooks/model_training.ipynb)
+* [Evaluación Comparativa](./Entrega2/notebooks/model_evaluation.ipynb)
+* [Optimización de Hiperparámetros](./Entrega2/notebooks/hyperparameter_tuning.ipynb)
+
+### 📂 Entrega 3 (Semana 17) - Despliegue
+* [Sistema en Tiempo Real](./Entrega3/src/realtime_system.py)
+* [Interfaz Gráfica](./Entrega3/src/gui_application.py)
+* [Documentación Final](./Entrega3/docs/reporte_final.pdf)
+
+## Estado del Proyecto por Entregas
+
+| Entrega | Estado | Fecha Límite | Completitud |
+|---------|--------|--------------|-------------|
+| **Entrega 1** | ✅ Completa | 13 octubre 2025 | 100% |
+| **Entrega 2** | 🔄 En Progreso | 27 octubre 2025 | 0% |
+| **Entrega 3** | ⏳ Planificada | 17 noviembre 2025 | 0% |
+
+## Métricas Objetivo del Proyecto
+
+- **Accuracy Global**: ≥85%
+- **F1-Score por Clase**: ≥80% para cada actividad
+- **Latencia de Inferencia**: <100ms por video
+- **FPS en Tiempo Real**: ≥15 fps
+- **Robustez Cross-Usuario**: ≥80% con usuarios no vistos
+
+---
+
+**Universidad ICESI** | **Facultad de Ingeniería, Diseño y Ciencias Aplicadas** | **Inteligencia Artificial 1** | **2025-2**
