@@ -4,13 +4,11 @@ Este proyecto es parte del curso **Inteligencia Artificial 1** de la Maestría e
 
 #### -- Estado del Proyecto: Activo
 
-**Líder del Equipo: [Juan Esteban Ruiz](https://github.com/[github handle])(@slackHandle)**  
-
 ## Miembros del Equipo
 
 |Nombre     |  Email   | 
 |-----------|-----------------|
-|[Juan Esteban Ruiz](https://github.com/JRuiz1601| juan.ruizome@u.icesi.edu.co |
+[Juan Esteban Ruiz](https://github.com/JRuiz1601)| juan.ruizome@u.icesi.edu.co |
 |[Juan David Quintero](https://github.com/[github handle]| @juan.quintero |
 |[Tomas Quintero](https://github.com/[github handle]) | @tomas.quintero |
 
