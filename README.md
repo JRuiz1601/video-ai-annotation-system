@@ -1,7 +1,5 @@
 # Sistema de Anotación de Video para Análisis de Actividades
 
-Este proyecto es parte del curso **Inteligencia Artificial 1** de la Maestría en Inteligencia Artificial Aplicada, Universidad ICESI, Cali Colombia.
-
 #### -- Estado del Proyecto: Activo
 
 ## Miembros del Equipo
