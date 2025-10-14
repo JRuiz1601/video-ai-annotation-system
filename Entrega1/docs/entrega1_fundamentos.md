@@ -17,12 +17,7 @@
 | **7** | **[Aspectos Éticos](#7-análisis-de-aspectos-éticos)** | Privacidad, equidad, transparencia y uso responsable |
 | **8** | **[Próximos Pasos](#8-próximos-pasos-y-cronograma)** | Cronograma detallado y responsabilidades del equipo | 
 
-
-
-**Recomendación**: Usa la **versión compacta** ya que mantiene toda la información importante pero es más fácil de leer y navegar. La columna de "Estado" también es útil para mostrar el progreso.
-
-¿Cuál de estas versiones prefieres para el documento final? O ¿quieres que ajuste algún aspecto específico?           
-
+         
 ## 1. Preguntas de Investigación
 
 ### 1.1 Pregunta Principal
