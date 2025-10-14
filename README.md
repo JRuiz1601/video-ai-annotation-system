@@ -7,8 +7,8 @@
 |Nombre     |  Email   | 
 |-----------|-----------------|
 [Juan Esteban Ruiz](https://github.com/JRuiz1601)| juan.ruizome@u.icesi.edu.co |
-|[Juan David Quintero](https://github.com/[github handle| @juan.quintero@u.icesi.edu.co |
-|[Tomas Quintero](https://github.com/tomasquin2003) | @tomas.quintero@u.icesi.edu.co |
+|[Juan David Quintero](https://github.com/[github handle| juan.quintero@u.icesi.edu.co |
+|[Tomas Quintero](https://github.com/tomasquin2003) | tomas.quintero@u.icesi.edu.co |
 
 ## Contacto
 * ¡Puedes contactar al líder del equipo o al instructor si tienes preguntas o estás interesado en contribuir!
