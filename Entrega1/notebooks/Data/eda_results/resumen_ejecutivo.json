@@ -1,0 +1,26 @@
+{
+  "generation_date": "2025-11-02T00:48:59.252926",
+  "total_videos": 45,
+  "total_frames": 4575,
+  "activities": [
+    "caminar_hacia",
+    "girar",
+    "ponerse_pie",
+    "sentarse",
+    "caminar_regreso"
+  ],
+  "activity_distribution": {
+    "girar": 1089,
+    "caminar_regreso": 1041,
+    "caminar_hacia": 991,
+    "ponerse_pie": 809,
+    "sentarse": 645
+  },
+  "balance_ratio": 0.5922865013774105,
+  "data_quality_pct": 100.0,
+  "recommendations": [
+    "Dataset apto para ML",
+    "Aplicar normalizaci\u00f3n",
+    "Considerar PCA si es necesario"
+  ]
+}
