@@ -1,0 +1,84 @@
+{
+  "date": "2025-11-20T19:56:40.872272",
+  "best_model": "MLP",
+  "best_accuracy": 0.9875904860392968,
+  "dataset_info": {
+    "train_samples": 5418,
+    "validation_samples": 967,
+    "test_samples": 967,
+    "features": 16,
+    "classes": 5,
+    "class_names": [
+      "caminar_hacia",
+      "caminar_regreso",
+      "girar",
+      "ponerse_pie",
+      "sentarse"
+    ]
+  },
+  "models_trained": {
+    "MLP": {
+      "accuracy": 0.9875904860392968,
+      "train_time_seconds": 15.703701
+    },
+    "RandomForest": {
+      "accuracy": 0.9855222337125129,
+      "train_time_seconds": 3.414469
+    },
+    "GradientBoosting": {
+      "accuracy": 0.953464322647363,
+      "train_time_seconds": 28.306781
+    },
+    "SVM": {
+      "accuracy": 0.8965873836608066,
+      "train_time_seconds": 1.524121
+    },
+    "LogisticRegression": {
+      "accuracy": 0.8552223371251293,
+      "train_time_seconds": 0.636714
+    }
+  },
+  "best_model_details": {
+    "name": "MLP",
+    "validation_accuracy": 0.9875904860392968,
+    "train_time_seconds": 15.703701,
+    "file_path": "best_model_mlp.pkl"
+  },
+  "performance_by_class": {
+    "caminar_hacia": {
+      "precision": 0.9964028776978417,
+      "recall": 1.0,
+      "f1_score": 0.9981981981981982,
+      "support": 277
+    },
+    "caminar_regreso": {
+      "precision": 1.0,
+      "recall": 0.9897435897435898,
+      "f1_score": 0.9948453608247423,
+      "support": 195
+    },
+    "girar": {
+      "precision": 0.9929577464788732,
+      "recall": 1.0,
+      "f1_score": 0.9964664310954063,
+      "support": 141
+    },
+    "ponerse_pie": {
+      "precision": 0.9698795180722891,
+      "recall": 0.9698795180722891,
+      "f1_score": 0.9698795180722891,
+      "support": 166
+    },
+    "sentarse": {
+      "precision": 0.973404255319149,
+      "recall": 0.973404255319149,
+      "f1_score": 0.973404255319149,
+      "support": 188
+    }
+  },
+  "global_metrics": {
+    "accuracy": 0.9875904860392968,
+    "macro_f1": 0.986558752701957,
+    "weighted_f1": 0.9875879142152822
+  }
+}
